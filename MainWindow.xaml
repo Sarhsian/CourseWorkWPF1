@@ -5,8 +5,91 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+       
+         Height="450" Width="800">
+
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\DrugsMain.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Background="LightGray" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" FontSize="20" FontStyle="Italic" Content="Medicine"
+                           VerticalAlignment="Center"></Label>
+                    <Button Grid.Column="4" Margin="3" Background="DarkGray" Content="Log in/Sign up"
+                            FontSize="17" FontWeight="SemiBold"></Button>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="3" Background="LightGray">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" FontStyle="Italic" Content="Gmail: drugs4u@gmail.com"
+                           VerticalAlignment="Center"></Label>
+                    <Label Grid.Column="4" FontSize="15" Foreground="DarkGray" FontStyle="Italic" Content="Created by Hottabych"
+                           VerticalAlignment="Center"></Label>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <FlowDocumentScrollViewer Grid.Row="1" VerticalAlignment="Top" Grid.RowSpan="2" Margin="10"
+                                   VerticalScrollBarVisibility="Disabled">
+            <FlowDocument FontSize="20" Background="DarkGray">
+                <Paragraph FontSize="25" FontWeight="SemiBold">Drugs store:</Paragraph>
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>Antibiotics</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Tablets</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Medical Cannabis</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Different things</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
     </Grid>
 </Window>
