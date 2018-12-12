@@ -1,0 +1,36 @@
+﻿<Window x:Class="CourseWorkWPF1.Signup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWorkWPF1"
+        mc:Ignorable="d"
+        Title="Registration" Height="400" Width="500" ResizeMode="NoResize" Background="#393837">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <Label  Grid.Row="0" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Name:"
+                VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label  Grid.Row="1" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Surname:"
+                VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label  Grid.Row="2" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Login:"
+                VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label  Grid.Row="3" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Password:"
+                VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+    </Grid>
+</Window>
