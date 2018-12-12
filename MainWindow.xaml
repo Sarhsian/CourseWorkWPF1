@@ -42,7 +42,7 @@
                     <Label Grid.Column="0" FontSize="20" FontStyle="Italic" Content="Medicine"
                            VerticalAlignment="Center"></Label>
                     <Button Grid.Column="4" Margin="3" Background="DarkGray" Content="Log in/Sign up"
-                            FontSize="17" FontWeight="SemiBold"></Button>
+                            FontSize="17" FontWeight="SemiBold" Click="Button_Click"></Button>
                 </Grid>
             </Border>
         </Grid>
@@ -63,12 +63,14 @@
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" FontStyle="Italic" Content="Gmail: drugs4u@gmail.com"
+                    <Label Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" FontStyle="Italic" Content="            Gmail: drugs4u@gmail.com"
                            VerticalAlignment="Center"></Label>
                     <Label Grid.Column="4" FontSize="15" Foreground="DarkGray" FontStyle="Italic" Content="Created by Hottabych"
                            VerticalAlignment="Center"></Label>
+                    <Image HorizontalAlignment="Left" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Dapino-Summer-Holiday-Palm-tree.ico"></Image>
                 </Grid>
             </Border>
+            
         </Grid>
 
         <FlowDocumentScrollViewer Grid.Row="1" VerticalAlignment="Top" Grid.RowSpan="2" Margin="10"

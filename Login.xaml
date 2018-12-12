@@ -1,0 +1,51 @@
+﻿<Window x:Class="CourseWorkWPF1.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWorkWPF1"
+        mc:Ignorable="d"
+        Title="Login"  Height="450" Width="400" ResizeMode="NoResize">
+    <Grid Background="#393837">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Foreground="LightGray" FontSize="40" FontWeight="SemiBold"
+                   HorizontalContentAlignment="Center" Content="Drugstore"></Label>
+            <Label Grid.Row="1" Foreground="LightGray" FontSize="30" FontWeight="ExtraLight"
+                   HorizontalContentAlignment="Center" VerticalAlignment="Bottom" Content="Enter your:"></Label>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0"  VerticalAlignment="Bottom" FontSize="20" Foreground="LightGray" Content="Login:"
+                   Padding="30,0,0,0"></Label>
+            <TextBox Grid.Row="1" VerticalAlignment="Top" Background="LightGray" FontSize="20"
+                     Margin="20,5,50,0"></TextBox>
+            <Label Grid.Row="2"  VerticalAlignment="Bottom" FontSize="20" Foreground="LightGray" Content="Password:"
+                   Padding="30,0,0,0"></Label>
+            <TextBox Grid.Row="3" VerticalAlignment="Top" Background="LightGray" FontSize="20"
+                     Margin="20,5,50,0"></TextBox>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Margin="20,50,20,50" Content="Log in"></Button>
+            <Button Grid.Column="1" Margin="20,50,20,50" Content="Sign in"></Button>
+        </Grid>
+    </Grid>
+</Window>
