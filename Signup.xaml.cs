@@ -19,14 +19,21 @@ namespace CourseWorkWPF1
     /// </summary>
     public partial class Signup : Window
     {
+        public List<Person> ShopClients = new List<Person>();
+        public Person tempPerson = new Person();
         public Signup()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            tempPerson.Name = tbxName.Text;
+            tempPerson.Surname = tbxSurname.Text;
+            tempPerson.Login = tbxLogin.Text;
+            tempPerson.Password = tbxPassword.Text;
+            ShopClients.Add(tempPerson);
+            this.Close();
         }
     }
 }

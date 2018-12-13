@@ -28,6 +28,7 @@ namespace CourseWorkWPF1
         {
             AdminMenu adminMenuWindow = new AdminMenu();
             adminMenuWindow.ShowDialog();
+            
         }
     }
 }

@@ -36,8 +36,15 @@
                      Margin="20,5,50,0"></TextBox>
             <Label Grid.Row="2"  VerticalAlignment="Bottom" FontSize="20" Foreground="LightGray" Content="Password:"
                    Padding="30,0,0,0"></Label>
-            <TextBox Name="Password" Grid.Row="3" VerticalAlignment="Top" Background="LightGray" FontSize="20"
-                     Margin="20,5,50,0"></TextBox>
+            <PasswordBox   Name="PasswordBox1" Grid.Row="3" VerticalAlignment="Top" Background="LightGray" FontSize="20"
+                     Margin="20,5,50,0" ></PasswordBox>
+            
+             
+          
+          
+         
+         
+            
         </Grid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>

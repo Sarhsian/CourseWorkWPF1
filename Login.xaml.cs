@@ -20,6 +20,7 @@ namespace CourseWorkWPF1
     public partial class Login : Window
     {
         StoreWindow storeWindow = new StoreWindow();
+        Signup SignupWindow = new Signup();
         public Login()
         {
             InitializeComponent();
@@ -27,22 +28,34 @@ namespace CourseWorkWPF1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Signup SignupWindow = new Signup();
+            
             SignupWindow.ShowDialog();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if(Login1.Text == "User" && Password.Text == "User")
-            {              
+            if (Login1.Text == "User" && PasswordBox1.Password == "User")
+            {
                 this.Close();
                 storeWindow.Admbtn.Visibility = System.Windows.Visibility.Hidden;
                 storeWindow.ShowDialog();
-            }else if(Login1.Text == "Admin" && Password.Text == "Admin")
+            }
+            else if (Login1.Text == "Admin" && PasswordBox1.Password == "Admin")
             {
                 this.Close();
                 storeWindow.ShowDialog();
             }
+            else
+            {
+                foreach (var client in SignupWindow.ShopClients)
+                {
+                    if(Login1.Text == client.Login && PasswordBox1.Password.ToString() == client.Password)
+                    {
+                        storeWindow.ShowDialog();
+                    }
+                }
+            }
+
         }
     }
 }

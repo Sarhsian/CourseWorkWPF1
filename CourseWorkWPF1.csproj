@@ -60,6 +60,7 @@
     <Compile Include="AdminMenu.xaml.cs">
       <DependentUpon>AdminMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Person.cs" />
     <Compile Include="Signup.xaml.cs">
       <DependentUpon>Signup.xaml</DependentUpon>
     </Compile>

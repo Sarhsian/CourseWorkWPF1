@@ -38,13 +38,13 @@
                    VerticalAlignment="Center"></Label>
             <Label Grid.Row="3" Grid.Column="0" Content="Password" FontSize="20" HorizontalAlignment="Center"
                    VerticalAlignment="Center"></Label>
-            <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5,0,5" Background="DarkGray"
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5,0,5" Background="DarkGray"
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5,0,5" Background="DarkGray"
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="0,5,0,5" Background="DarkGray"
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
         </Grid>
 

@@ -28,10 +28,10 @@
                 VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
         <Label  Grid.Row="3" Grid.Column="0" FontSize="20" Foreground="Gray" Content="Password:"
                 VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
-        <TextBox Grid.Row="0" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
-        <TextBox Grid.Row="1" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
-        <TextBox Grid.Row="2" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
-        <TextBox Grid.Row="3" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <TextBox Name="tbxName" Grid.Row="0" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <TextBox Name="tbxSurname" Grid.Row="1" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <TextBox Name="tbxLogin" Grid.Row="2" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <TextBox Name="tbxPassword"  Grid.Row="3" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
         <Button Grid.Row="5" Grid.Column="1" Background="Gray" Margin="4" Content="SIGN UP"
                 FontSize="19" Click="Button_Click"></Button>
         <Label Grid.Row="4" FontSize="20" Foreground="Gray" Content="Choose:"
