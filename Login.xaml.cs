@@ -19,10 +19,31 @@ namespace CourseWorkWPF1
     /// </summary>
     public partial class Login : Window
     {
+        StoreWindow storeWindow = new StoreWindow();
         public Login()
         {
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Signup SignupWindow = new Signup();
+            this.Close();
+            SignupWindow.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if(Login1.Text == "User" && Password.Text == "User")
+            {              
+                this.Close();
+                storeWindow.Admbtn.Visibility = System.Windows.Visibility.Hidden;
+                storeWindow.ShowDialog();
+            }else if(Login1.Text == "Admin" && Password.Text == "Admin")
+            {
+                this.Close();
+                storeWindow.ShowDialog();
+            }
+        }
     }
 }

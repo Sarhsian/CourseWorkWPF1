@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace CourseWorkWPF1
 {
     /// <summary>
-    /// Interaction logic for Signup.xaml
+    /// Interaction logic for StoreWindow.xaml
     /// </summary>
-    public partial class Signup : Window
+    public partial class StoreWindow : Window
     {
-        public Signup()
+        public StoreWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

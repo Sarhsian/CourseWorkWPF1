@@ -32,11 +32,11 @@
 
             <Label Grid.Row="0"  VerticalAlignment="Bottom" FontSize="20" Foreground="LightGray" Content="Login:"
                    Padding="30,0,0,0"></Label>
-            <TextBox Grid.Row="1" VerticalAlignment="Top" Background="LightGray" FontSize="20"
+            <TextBox Name="Login1" Grid.Row="1" VerticalAlignment="Top" Background="LightGray" FontSize="20"
                      Margin="20,5,50,0"></TextBox>
             <Label Grid.Row="2"  VerticalAlignment="Bottom" FontSize="20" Foreground="LightGray" Content="Password:"
                    Padding="30,0,0,0"></Label>
-            <TextBox Grid.Row="3" VerticalAlignment="Top" Background="LightGray" FontSize="20"
+            <TextBox Name="Password" Grid.Row="3" VerticalAlignment="Top" Background="LightGray" FontSize="20"
                      Margin="20,5,50,0"></TextBox>
         </Grid>
         <Grid Grid.Row="2">
@@ -44,8 +44,8 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Margin="20,50,20,50" Content="Log in"></Button>
-            <Button Grid.Column="1" Margin="20,50,20,50" Content="Sign up"></Button>
+            <Button Grid.Column="0" Margin="20,50,20,50" Content="Log in" Click="Button_Click_1"></Button>
+            <Button Grid.Column="1" Margin="20,50,20,50" Content="Sign up" Click="Button_Click"></Button>
         </Grid>
     </Grid>
 </Window>

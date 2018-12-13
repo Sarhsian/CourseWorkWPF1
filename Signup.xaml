@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF1"
         mc:Ignorable="d"
-        Title="Registration" Height="400" Width="500" ResizeMode="NoResize" Background="#393837">
+        Title="Registration" Height="300" Width="300" ResizeMode="NoResize" Background="#393837">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -20,17 +20,25 @@
             <ColumnDefinition></ColumnDefinition>
             
         </Grid.ColumnDefinitions>
-        <Label  Grid.Row="0" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Name:"
+        <Label  Grid.Row="0" Grid.Column="0" FontSize="20" Foreground="Gray" Content="Name:"
                 VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
-        <Label  Grid.Row="1" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Surname:"
+        <Label  Grid.Row="1" Grid.Column="0" FontSize="20" Foreground="Gray" Content="Surname:"
                 VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
-        <Label  Grid.Row="2" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Login:"
+        <Label  Grid.Row="2" Grid.Column="0" FontSize="20" Foreground="Gray" Content="Login:"
                 VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
-        <Label  Grid.Row="3" Grid.Column="0" FontSize="30" Foreground="Gray" Content="Password:"
+        <Label  Grid.Row="3" Grid.Column="0" FontSize="20" Foreground="Gray" Content="Password:"
                 VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
         <TextBox Grid.Row="0" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
         <TextBox Grid.Row="1" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
         <TextBox Grid.Row="2" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
         <TextBox Grid.Row="3" Grid.Column="1" Background="DarkGray" Margin="7,10,7,10"></TextBox>
+        <Button Grid.Row="5" Grid.Column="1" Background="Gray" Margin="4" Content="SIGN UP"
+                FontSize="19" Click="Button_Click"></Button>
+        <Label Grid.Row="4" FontSize="20" Foreground="Gray" Content="Choose:"
+                VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <ComboBox Grid.Row="4" Grid.Column="1" Margin="10">
+            <TextBlock>Admin</TextBlock>
+            <TextBlock>Client</TextBlock>
+        </ComboBox>
     </Grid>
 </Window>
