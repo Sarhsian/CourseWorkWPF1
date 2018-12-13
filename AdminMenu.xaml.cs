@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace CourseWorkWPF1
 {
     /// <summary>
-    /// Interaction logic for StoreWindow.xaml
+    /// Interaction logic for AdminMenu.xaml
     /// </summary>
-    public partial class StoreWindow : Window
+    public partial class AdminMenu : Window
     {
-        public StoreWindow()
+        public AdminMenu()
         {
             InitializeComponent();
-        }
-
-        private void Admbtn_Click(object sender, RoutedEventArgs e)
-        {
-            AdminMenu adminMenuWindow = new AdminMenu();
-            adminMenuWindow.ShowDialog();
         }
     }
 }

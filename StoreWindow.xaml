@@ -31,7 +31,7 @@
             <Button Grid.Row="2" Background="DarkGray" Margin="10" Content="INFO"
                     FontSize="15"></Button>
             <Button Name="Admbtn" Grid.Row="3" Background="DarkGray" Margin="10" Content="Admin Menu"
-                    FontSize="15"></Button>
+                    FontSize="15" Click="Admbtn_Click"></Button>
         </Grid>
         <TabControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5" Background="LightGray">
             <TabItem Width="150" Height="30" Header="Antibiotics">

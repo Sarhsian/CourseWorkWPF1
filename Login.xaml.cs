@@ -28,7 +28,6 @@ namespace CourseWorkWPF1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Signup SignupWindow = new Signup();
-            this.Close();
             SignupWindow.ShowDialog();
         }
 
