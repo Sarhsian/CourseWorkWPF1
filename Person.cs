@@ -12,11 +12,8 @@ namespace CourseWorkWPF1
         public string Surname { get; set; }
         public string  Login { get; set; }
         public string Password { get; set; }
-
-        public Person()
-        {
-                   
-        }
+        public bool IsAdmin { get; set; } = false;
+        
     }
 
 }

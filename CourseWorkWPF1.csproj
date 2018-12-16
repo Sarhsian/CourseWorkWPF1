@@ -60,7 +60,11 @@
     <Compile Include="AdminMenu.xaml.cs">
       <DependentUpon>AdminMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Basket.xaml.cs">
+      <DependentUpon>Basket.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Person.cs" />
+    <Compile Include="Persons.cs" />
     <Compile Include="Signup.xaml.cs">
       <DependentUpon>Signup.xaml</DependentUpon>
     </Compile>
@@ -68,6 +72,10 @@
       <DependentUpon>StoreWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AdminMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Basket.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,6 +138,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dapino-Summer-Holiday-Palm-tree.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Azintrop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cefriaztron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical Marijuana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marij.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Allerga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clartin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alfex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical cannabis 1st sort.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,5 +30,16 @@ namespace CourseWorkWPF1
             adminMenuWindow.ShowDialog();
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello how are you?");
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Basket basket = new Basket();
+            basket.ShowDialog();
+        }
     }
 }

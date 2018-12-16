@@ -19,7 +19,6 @@ namespace CourseWorkWPF1
     /// </summary>
     public partial class Login : Window
     {
-        StoreWindow storeWindow = new StoreWindow();
         Signup SignupWindow = new Signup();
         public Login()
         {
@@ -28,8 +27,12 @@ namespace CourseWorkWPF1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            SignupWindow.ShowDialog();
+            if (SignupWindow.IsActive == false)
+            {
+                SignupWindow.ShowDialog();
+            }
+            else
+                SignupWindow.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -37,21 +40,33 @@ namespace CourseWorkWPF1
             if (Login1.Text == "User" && PasswordBox1.Password == "User")
             {
                 this.Close();
+                StoreWindow storeWindow = new StoreWindow();
                 storeWindow.Admbtn.Visibility = System.Windows.Visibility.Hidden;
                 storeWindow.ShowDialog();
             }
             else if (Login1.Text == "Admin" && PasswordBox1.Password == "Admin")
             {
-                this.Close();
+                StoreWindow storeWindow = new StoreWindow();
                 storeWindow.ShowDialog();
             }
             else
             {
-                foreach (var client in SignupWindow.ShopClients)
+                foreach (var client in Persons.ShopClients)
                 {
                     if(Login1.Text == client.Login && PasswordBox1.Password.ToString() == client.Password)
                     {
-                        storeWindow.ShowDialog();
+                        if (client.IsAdmin == true)
+                        {
+                            StoreWindow storeWindow = new StoreWindow();
+                            storeWindow.ShowDialog();
+
+                        }
+                        else
+                        {
+                            StoreWindow storeWindow = new StoreWindow();
+                            storeWindow.Admbtn.Visibility = System.Windows.Visibility.Hidden;
+                            storeWindow.ShowDialog();
+                        }
                     }
                 }
             }

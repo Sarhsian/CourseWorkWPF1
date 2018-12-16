@@ -32,8 +32,16 @@ namespace CourseWorkWPF1
             tempPerson.Surname = tbxSurname.Text;
             tempPerson.Login = tbxLogin.Text;
             tempPerson.Password = tbxPassword.Text;
-            ShopClients.Add(tempPerson);
-            this.Close();
+            Persons.ShopClients.Add(tempPerson);
+            
+            tempPerson = new Person();
+            this.Visibility = System.Windows.Visibility.Hidden;
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }

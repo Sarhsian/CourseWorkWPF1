@@ -24,25 +24,252 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Grid.Row="0" Background="DarkGray" Margin="10" Content="Add to basket"
-                    FontSize="15"></Button>
             <Button Grid.Row="1" Background="DarkGray" Margin="10" Content="Basket"
-                    FontSize="15"></Button>
+                    FontSize="15" Click="Button_Click_1"></Button>
             <Button Grid.Row="2" Background="DarkGray" Margin="10" Content="INFO"
-                    FontSize="15"></Button>
+                    FontSize="15" Click="Button_Click"></Button>
             <Button Name="Admbtn" Grid.Row="3" Background="DarkGray" Margin="10" Content="Admin Menu"
                     FontSize="15" Click="Admbtn_Click"></Button>
         </Grid>
         <TabControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5" Background="LightGray">
             <TabItem Width="150" Height="30" Header="Antibiotics">
-                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Azintrop.jpg"
+                           Margin="10"></Image>
+                    <Image Grid.Column="0" Grid.Row="1" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Cefriaztron.jpg"
+                           Margin="10"></Image>
+                    <Image Grid.Column="0" Grid.Row="2" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Suamed.jpg"
+                           Margin="10"></Image>
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Azintrop" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="20" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="0" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Cefriaztron" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="35" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="1" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Suamed" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="50" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="2" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+
+                </Grid>
             </TabItem>
+            
             <TabItem Width="150" Height="30" Header="Allergic disorders">
 
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Alfex.jpg"
+                           Margin="10"></Image>
+                    <Image Grid.Column="0" Grid.Row="1" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Allerga.png"
+                           Margin="10"></Image>
+                    <Image Grid.Column="0" Grid.Row="2" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Clartin.jpg"
+                           Margin="10"></Image>
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Alflex" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="10" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="0" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Allerga" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="50" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="1" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Clartin" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="30" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="2" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+
+                </Grid>
             </TabItem>
             <TabItem Width="150" Height="30" Header="Medical Cannabis">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0" Grid.Row="0" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Medical cannabis 1st sort.jpg"
+                           Margin="10"></Image>
+                    <Image Grid.Column="0" Grid.Row="1" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Medical Marijuana.jpg"
+                           Margin="10"></Image>
+                    <Image Grid.Column="0" Grid.Row="2" Source="C:\Users\pc\source\repos\CourseWorkWPF1\Resources\Marij.jpg"
+                           Margin="10"></Image>
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Medical Marijuana 1" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="200" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="0" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Medical Cannabis" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="350" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="1" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0"  Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                   Text="Medical Cannabis 228" FontSize="20" FontStyle="Italic" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                   Text="Price:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   Text="499" FontSize="20" FontWeight="SemiBold"></TextBlock>
+                    </Grid>
+                    <Button Grid.Row="2" Grid.Column="2" Margin="20,30,20,30"
+                            FontSize="20">ADD</Button>
+
+                </Grid>
 
             </TabItem>
         </TabControl>
+        
     </Grid>
 </Window>

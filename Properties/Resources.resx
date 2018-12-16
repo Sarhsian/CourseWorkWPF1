@@ -118,10 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Alfex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alfex.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Allerga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Allerga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azintrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Azintrop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cefriaztron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cefriaztron.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clartin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clartin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dapino_Summer_Holiday_Palm_tree" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dapino-Summer-Holiday-Palm-tree.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DrugsMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DrugsMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marij" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marij.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medical_cannabis_1st_sort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medical cannabis 1st sort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medical_Marijuana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medical Marijuana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Suamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Suamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

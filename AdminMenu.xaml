@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF1"
         mc:Ignorable="d"
-        Title="AdminMenu" Height="450" Width="800">
+        Title="AdminMenu" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -17,7 +17,17 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <DataGrid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2"></DataGrid>
+        <DataGrid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Name="DataGrid1" 
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Width="100" Binding="{Binding Path=Name}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Surname" Binding="{Binding Path=Surname}" Width="100" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Login" Binding="{Binding Path=Login}" Width="100" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Password" Binding="{Binding Path=Password}" Width="100"></DataGridTextColumn>
+                <DataGridCheckBoxColumn Header="IsAdmin" Binding="{Binding Path=IsAdmin}"></DataGridCheckBoxColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
@@ -38,14 +48,17 @@
                    VerticalAlignment="Center"></Label>
             <Label Grid.Row="3" Grid.Column="0" Content="Password" FontSize="20" HorizontalAlignment="Center"
                    VerticalAlignment="Center"></Label>
-            <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
+            <TextBox Name="Name1" Grid.Row="0" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
+            <TextBox Name="Surname1" Grid.Row="1" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
+            <TextBox Name="Login1" Grid.Row="2" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
+            <TextBox Name="Passwod1" Grid.Row="3" Grid.Column="1" Margin="0,5,5,5" Background="DarkGray"
                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+            <CheckBox Grid.Row="4" Grid.Column="0" Margin="0,5,5,5" Background="DarkGray"
+                      HorizontalAlignment="Center" VerticalAlignment="Center" Content="Is Admin"
+                      FontSize="18" FontWeight="SemiBold" FontStyle="Italic"></CheckBox>
         </Grid>
 
         <Grid Grid.Row="1" Grid.Column="0">
@@ -58,9 +71,9 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Button Grid.Row="1" Grid.Column="0" Margin="15" Content="REG"
-                    FontSize="20"></Button>
+                    FontSize="20" Click="Button_Click"></Button>
             <Button Grid.Row="1" Grid.Column="1" Margin="15" Content="DELLETE"
-                    FontSize="20"></Button>
+                    FontSize="20" Click="Button_Click_1"></Button>
         </Grid>
     </Grid>
 </Window>

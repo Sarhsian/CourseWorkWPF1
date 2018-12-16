@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWorkWPF1"
         mc:Ignorable="d"
-        Title="Registration" Height="300" Width="300" ResizeMode="NoResize" Background="#393837">
+        Title="Registration" Height="300" Width="300" ResizeMode="NoResize" Background="#393837"
+        WindowStyle="None">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -40,5 +41,7 @@
             <TextBlock>Admin</TextBlock>
             <TextBlock>Client</TextBlock>
         </ComboBox>
+        <Button Grid.Row="5" Grid.Column="0" Background="Gray" Margin="4" Content="BACK"
+                FontSize="19" Click="Button_Click_1"></Button>
     </Grid>
 </Window>

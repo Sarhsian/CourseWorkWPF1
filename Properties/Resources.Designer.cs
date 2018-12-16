@@ -61,6 +61,56 @@ namespace CourseWorkWPF1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alfex {
+            get {
+                object obj = ResourceManager.GetObject("Alfex", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Allerga {
+            get {
+                object obj = ResourceManager.GetObject("Allerga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Azintrop {
+            get {
+                object obj = ResourceManager.GetObject("Azintrop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cefriaztron {
+            get {
+                object obj = ResourceManager.GetObject("Cefriaztron", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clartin {
+            get {
+                object obj = ResourceManager.GetObject("Clartin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Dapino_Summer_Holiday_Palm_tree {
@@ -76,6 +126,46 @@ namespace CourseWorkWPF1.Properties {
         internal static System.Drawing.Bitmap DrugsMain {
             get {
                 object obj = ResourceManager.GetObject("DrugsMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Marij {
+            get {
+                object obj = ResourceManager.GetObject("Marij", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Medical_cannabis_1st_sort {
+            get {
+                object obj = ResourceManager.GetObject("Medical_cannabis_1st_sort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Medical_Marijuana {
+            get {
+                object obj = ResourceManager.GetObject("Medical_Marijuana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Suamed {
+            get {
+                object obj = ResourceManager.GetObject("Suamed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
